@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+}
+
+/* Defining Grid */
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr 1fr 1fr 1fr 1fr 2fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 2fr 1fr 1fr 1.5fr 3fr 1.5fr 3fr 0.5fr 1.5fr;
+  background-color: rgb(178, 189, 178);
+}
+
+/* Header */
+.logo {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  padding-left: 3vw;
+  padding-top: 4vh;
+  background-color: rgb(44, 52, 61);
+}
+.title {
+  grid-column-start: 2;
+  grid-column-end: 13;
+  letter-spacing: 0.3vw;
+  padding-top: 5vh;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  background-color: rgb(44, 52, 61);
+}
+
+/* GRIDS */
+.search-box,
+.box1,
+.box2,
+.box3,
+.box4,
+.box5 {
+  background-color: rgb(40, 46, 44);
+  border-radius: 20px;
+}
+
+.search-box {
+  grid-column-start: 6;
+  grid-column-end: 11;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+#search-box-text {
+  padding-left: 2vw;
+  padding-top: 1.5vh;
+  color: rgb(88, 121, 102);
+  font-size: 3vh;
+  letter-spacing: 0.25vw;
+}
+
+.box1 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 9;
+}
+
+.box2 {
+  grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+
+.box3 {
+  grid-column-start: 8;
+  grid-column-end: 9;
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+
+.box4 {
+  grid-column-start: 10;
+  grid-column-end: 12;
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+
+.box5 {
+  grid-column-start: 5;
+  grid-column-end: 12;
+  grid-row-start: 7;
+  grid-row-end: 8;
+}
